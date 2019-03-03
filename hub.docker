@@ -1,0 +1,4 @@
+*) If you look up apache on docker hub you will see that the offical build is actually called httpd
+httpd 
+
+docker container run -d -p 8081:80 --name myapache httpd
