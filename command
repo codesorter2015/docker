@@ -1,15 +1,15 @@
 
-Show us our running containers on our systems
+*) Show us our running containers on our systems
 =============================================
 docker container ls
 docker container ls -a 
 
-Get nginx
+*) docker container ps
+
+*)Get nginx
 ==========
 docker pull nginx
 
+*) docker images
 
-docker images
-
-last parameter is image name 
-docker container run -d -p 8080:80 --name mynginux nginx
+*) docker container run -d -p 8080:80 --name mynginux nginx
