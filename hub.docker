@@ -1,4 +1,11 @@
 *) If you look up apache on docker hub you will see that the offical build is actually called httpd
 httpd 
+Ex: docker container run -d -p 8081:80 --name myapache httpd
 
-docker container run -d -p 8081:80 --name myapache httpd
+*) mysql
+docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=PWD mysql
+docker container stop mysql
+docker ps
+docker ps -a 
+docker container rm mysql
+docker container rm mysql -f 
