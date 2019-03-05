@@ -21,9 +21,22 @@ Docker containers can be used throughout the whole lifecycle in order to provide
 what is docker?
 ================
 Docker is a tool designed to make it easier to create, deploy and run applications by using containers.
-Docker containers are lightweight alternatives to virtual machines and it uses the host OS.  
+Docker containers are lightweight alternatives to virtual machines and it uses the host OS.
+
+what is docker file?
+====================
+docker file builds a docker image and that image contains all the project's code. 
+you can run that image to create as many docker containers as you want.
+then that image can be uploaded on docker hub,from docker hub any one can pull the image and build a container.
+
+what is docker hub?
+====================
+docker hub is basically a cloud hosted service provided by docker 
 
 docker example?
 docker case-study?
 installing wordpress and php myadmin using docker 
 docker components?
+
+
+https://www.youtube.com/watch?v=lcQfQRDAMpQ
