@@ -14,6 +14,10 @@ Solution:
 how docker is solving these problems :
 ======================================
 you can run several microservices in the same VM by running various docker containers for each microservice. 
+you don't need to pre allocate any RAM or any disk space so it will take the RAM and disk space according to the requirement of applications
+Run docker containers when a virtual machine is that you want to segregate it from the rest of the host machine you want to encapsulate that separately in a virtual machine
+Docker containers can be used throughout the whole lifecycle in order to provide consistent computing environment so the same env will be present in dev,test and prod.
+
 
 what is docker?
 docker example?
