@@ -1,6 +1,17 @@
-why we need docker?
+* ) why we need docker?
 Problem:
-An application works in developer's laptop but not in testing or production. This is due to difference in computing environment between Dev,Stage and Prod. 
+========
+* An application works in developer's laptop but not in testing or production. This is due to difference in computing environment between Dev,Stage and Prod. 
+* I want a new technology stack in one of my module on one of my service.
+
+Solution:
+=========
+* Some type of applications become easier to build and maintain when they are broken down into smaller composable pieces which work together.
+* Each component is developed separately and the application is then simply the sum of its constituent components.
+* I want a new technology stack in one of my module on one of my service so i can easily do that because the dependency concerns will be very less when compared to the application as a whole apart from that the third reason is if any of my module or any of my service goes down my whole application remains largely unaffected.
+
+
+
 what is docker?
 docker example?
 docker case-study?
