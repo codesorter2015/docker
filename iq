@@ -18,8 +18,11 @@ you don't need to pre allocate any RAM or any disk space so it will take the RAM
 Run docker containers when a virtual machine is that you want to segregate it from the rest of the host machine you want to encapsulate that separately in a virtual machine
 Docker containers can be used throughout the whole lifecycle in order to provide consistent computing environment so the same env will be present in dev,test and prod.
 
-
 what is docker?
+================
+Docker is a tool designed to make it easier to create, deploy and run applications by using containers.
+Docker containers are lightweight alternatives to virtual machines and it uses the host OS.  
+
 docker example?
 docker case-study?
 installing wordpress and php myadmin using docker 
