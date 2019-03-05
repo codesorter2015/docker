@@ -1,5 +1,8 @@
 why we need docker?
+Problem:
+An application works in developer's laptop but not in testing or production. This is due to difference in computing environment between Dev,Stage and Prod. 
 what is docker?
 docker example?
 docker case-study?
+installing wordpress and php myadmin using docker 
 docker components?
