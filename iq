@@ -33,6 +33,11 @@ what is docker hub?
 ====================
 docker hub is basically a cloud hosted service provided by docker 
 
+what is docker DTR?
+===================
+DTR(Docker trusted registry)
+It stores the docker images
+
 docker example?
 docker case-study?
 installing wordpress and php myadmin using docker 
