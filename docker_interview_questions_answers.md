@@ -5,3 +5,6 @@
    * A container is a way to package application with all the necessary dependencies and configuration. 
    * Portable artifact, means package can be easily shared and moved round.
    * It helps development and deployment more efficient. 
+
+2. Where do container live?
+   Container Repository
