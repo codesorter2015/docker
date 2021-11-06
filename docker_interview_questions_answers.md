@@ -27,10 +27,16 @@
 5. Basic commands
 
    docker pull {image_name}
+   
    docker run {image_name}
+   
    docker ps 
+   
    docker run -d {image_name}
+   
    docker stop {container_id}
+   
+   docker start {container_id}
    
 6. How to check running and stopped container
 
