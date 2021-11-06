@@ -5,6 +5,22 @@
    * A container is a way to package application with all the necessary dependencies and configuration. 
    * Portable artifact, means package can be easily shared and moved round.
    * It helps development and deployment more efficient. 
+   * It's own isolated operating system layer.
+   * Own isolated environment.
+   * Layers of images.
+   * Container is running environment for image.
 
 2. Where do container live?
+   
    Container Repository
+   
+3. Docker Image
+
+   the actual Package
+   
+4. How to uninstall older version docker in ubuntu?
+   
+   sudo apt-get remove docker docker-engine docker.io
+
+   
+   
