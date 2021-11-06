@@ -9,6 +9,8 @@
    * Own isolated environment.
    * Layers of images.
    * Container is running environment for image.
+   * Port binded (talk to application running inside of container)
+   * Virtual file system
 
 2. Where do container live?
    
@@ -21,6 +23,20 @@
 4. How to uninstall older version docker in ubuntu?
    
    sudo apt-get remove docker docker-engine docker.io
+   
+5. Basic commands
+
+   docker pull {image_name}
+   docker run {image_name}
+   docker ps 
+   docker run -d {image_name}
+   docker stop {container_id}
+   
+6. How to check running and stopped container
+
+   docker ps -a
+   
+
 
    
    
