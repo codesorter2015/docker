@@ -26,9 +26,9 @@
    
 5. Basic commands
 
-   docker pull {image_name}
+   docker pull {image_name}:{version}
    
-   docker run {image_name}
+   docker run {image_name}:{version}
    
    docker ps 
    
@@ -41,6 +41,10 @@
 6. How to check running and stopped container
 
    docker ps -a
+   
+7. Binding
+
+   docker run -p6000:4000 -d angular
    
 
 
