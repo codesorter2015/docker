@@ -44,7 +44,8 @@
    
 7. Binding
 
-   docker run -p6000:4000 -d angular
+   docker run -p6000:4000 -d {image_name}
+   docker run -p6001:4000 -d {image_name}:{version}
    
 
 
