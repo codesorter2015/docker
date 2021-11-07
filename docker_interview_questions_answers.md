@@ -46,6 +46,9 @@
    
    docker network ls
    
+   docker build -t {app-name}:{version}
+   
+   
 6. How to check running and stopped container
 
    docker ps -a
@@ -82,6 +85,8 @@
 
 10. docker compose 
 
+    docker compose takes care of creating a common network!
+
     version: '3'
     
     services: 
@@ -114,6 +119,40 @@
           - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
           
           - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+
+    
+    docker-compose basic commmands:
+    
+      docker-compose -f mongo.yaml up -d
+      
+      docker-compose -f mongo.yaml down
+      
+11. What is a Dockerfile ?
+
+    Blueprint for building images
+    
+    Ex:
+    
+    FROM node:13-alpine
+    
+    ENV MONGO_DB_USERNAME=admin \
+        MONGO_DB_PASSWORD=password
+        
+    RUN mkdir -p /home/app
+    
+    COPY . /home/app
+    
+    CMD ["node"],"server.js"]
+    
+    
+    
+    
+
+    
+ 
+      
+ 
+    
 
           
     
