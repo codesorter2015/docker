@@ -146,7 +146,7 @@
     CMD ["node"],"/home/app/server.js"]
     
   
-  12. Delete a docker image
+ 12. Delete a docker image
 
       check container running based on image name
       
@@ -157,7 +157,7 @@
       docker rmi {image_name}
       
       
-  13. AWS ECR
+ 13. AWS ECR
       
       AWS cli needs to be installed 
       
@@ -172,9 +172,14 @@
       docker push {registryDomain/imageName:tag}
       
       
-  14. Docker registries
+14. Docker registries
 
       registryDomain/imageName:tag
+      
+ 
+15. When do we need docker volumes ?
+
+      for data persistence
       
   
       
