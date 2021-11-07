@@ -143,7 +143,44 @@
     
     COPY . /home/app
     
-    CMD ["node"],"server.js"]
+    CMD ["node"],"/home/app/server.js"]
+    
+  
+  12. Delete a docker image
+
+      check container running based on image name
+      
+      docker ps -a | grep {image_name}
+      
+      docker rm {container_id}
+        
+      docker rmi {image_name}
+      
+      
+  13. AWS ECR
+      
+      AWS cli needs to be installed 
+      
+      Credentials configured
+      
+      $(aws ecr get-login --no-include-email --region eu-central-1)
+      
+      docker build -t {app_name}:{tag} .
+      
+      docker tag {app_name}:{tag} {registryDomain/imageName:tag}
+      
+      docker push {registryDomain/imageName:tag}
+      
+      
+  14. Docker registries
+
+      registryDomain/imageName:tag
+      
+  
+      
+      
+ 
+ 
     
     
     
