@@ -44,6 +44,8 @@
    
    docker logs {container_id} or docker logs {container_name}
    
+   docker network ls
+   
 6. How to check running and stopped container
 
    docker ps -a
@@ -57,7 +59,46 @@
 8. How to get the terminal of a running container ?
 
    docker exec -it {docker_id} /bin/bash
+   
+9. How to override default username and password of mongoDB
+  
+   docker run  -d \
+   > --name mongodb \
+   > -p 27017:27017 \
+   > -e MONGO_INITDB_ROOT_USERNAME=admin \
+   > -e MONGO_INITDB_PASSWORD=password \
+   > --net mongo-network
+   > mongo
+      
+   
+   docker run -d \
+   > -p 8081:8081
+   > -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
+   > -e ME_CONFIG_MONGODB_ADMINPASSWORD=password \
+   > --net mongo-network \
+   > --name mongo-express \
+   > -e ME_CONFIG_MONGODB_SERVER=mongodb \
+   > mongo-express
 
+10. docker compose 
+
+    version: '3'
+    services: 
+      mongodb:   //container name
+        image: mongo
+        ports:
+          -27017:27017
+        environment:
+          - MONGO_INITDB_ROOT_USERNAME=admin
+          - MONGO_INITDB_PASSWORD=password
+     mongo-express:
+        image: mongo-express
+        ports:
+          -8081:8081
+        environment:
+          - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+          - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+    
 
    
    
