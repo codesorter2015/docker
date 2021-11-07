@@ -32,11 +32,17 @@
    
    docker ps 
    
+   docker ps -a
+   
    docker run -d {image_name}
    
    docker stop {container_id}
    
    docker start {container_id}
+   
+   docker images
+   
+   docker logs {container_id} or docker logs {container_name}
    
 6. How to check running and stopped container
 
@@ -46,7 +52,11 @@
 
    docker run -p6000:4000 -d {image_name}
    docker run -p6001:4000 -d {image_name}:{version}
+   docker run -d -p6002:4000 --name angular-older {image_name}:{version}
    
+8. How to get the terminal of a running container ?
+
+   docker exec -it {docker_id} /bin/bash
 
 
    
