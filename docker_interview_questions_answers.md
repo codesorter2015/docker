@@ -10,7 +10,8 @@
    * Layers of images.
    * Container is running environment for image.
    * Port binded (talk to application running inside of container)
-   * Virtual file system
+   * Virtual file system (Container has a virtual file where the data is usually stored but here there is no persistence 
+    (Data is gone! Means when restarting or removing the container))
 
 2. Where do container live?
    
@@ -99,6 +100,10 @@
         
           -27017:27017
           
+        volumes:
+        
+          -db-data: /var/lib/mysql/data
+          
         environment:
         
           - MONGO_INITDB_ROOT_USERNAME=admin
@@ -179,7 +184,27 @@
  
 15. When do we need docker volumes ?
 
-      for data persistence
+      For data persistence
+      Databases
+      Other stateful Applications
+      
+
+16. What is a Docker Volume? 
+
+    Folder in physical host file system is mounted into the virtual file system of docker
+    
+    Data gets automatically replicated 
+    
+    3 volume types
+    
+    1) using docker run command
+    docker run -v /home/mount/data:/var/lib/mysql/data (Host volumes)
+    
+    2) docker run -v /var/lib/mysql/data (Anonymous volumes)
+    
+    3) docker run -v name:/var/lib/mysql/data (named volumes) (you can reference the volume by name)
+
+
       
   
       
