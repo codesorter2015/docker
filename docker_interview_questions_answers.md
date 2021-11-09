@@ -98,11 +98,11 @@
         
         ports:
         
-          -27017:27017
+          - 27017:27017
           
         volumes:
         
-          -db-data: /var/lib/mysql/data
+          - mongo-data: /data/db
           
         environment:
         
@@ -111,7 +111,7 @@
           - MONGO_INITDB_PASSWORD=password
           
           
-     mongo-express:
+      mongo-express:
      
         image: mongo-express
         
@@ -124,6 +124,13 @@
           - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
           
           - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+
+
+     volumes
+         
+         db-data 
+          driver:local
+          
 
     
     docker-compose basic commmands:
